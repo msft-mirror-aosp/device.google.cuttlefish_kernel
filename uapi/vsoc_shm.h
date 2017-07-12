@@ -18,17 +18,16 @@
  ****************************************************************************/
 #ifndef _UAPI_LINUX_VSOC_SHM_H
 #define _UAPI_LINUX_VSOC_SHM_H
+#define VSOC_REGION_FREE ((uint32_t) 0)
 typedef struct {
-  uint32_t region_begin_offset;
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
+  uint32_t region_begin_offset;
   uint32_t region_end_offset;
   uint32_t owner_offset;
-  uint32_t before_owned_value;
-  uint32_t after_owned_value;
-/* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
   uint32_t owned_value;
+/* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
 } fd_scoped_permission;
-static const uint32_t VSOC_NODE_FREE = 0;
+#define VSOC_NODE_FREE ((uint32_t) 0)
 typedef struct {
   uint32_t num_nodes_lg2;
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
