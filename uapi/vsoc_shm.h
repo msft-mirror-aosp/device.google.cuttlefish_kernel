@@ -31,7 +31,7 @@ typedef struct {
 typedef struct {
   uint32_t num_nodes_lg2;
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
-  uint32_t offset_to_signal_table;
+  uint32_t futex_uaddr_table_offset;
   uint32_t interrupt_signalled_offset;
 } vsoc_signal_table_layout;
 typedef char vsoc_device_name[16];
