@@ -77,5 +77,6 @@ typedef struct {
 #define VSOC_DESCRIBE_REGION _IOR(0xF5, 4, vsoc_device_region)
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
 #define VSOC_SELF_INTERRUPT _IO(0xF5, 5)
+#define VSOC_SEND_INTERRUPT_TO_HOST _IO(0xF5, 6)
 #endif
 
