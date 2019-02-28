@@ -17,7 +17,6 @@ cc_library_headers {
   vendor: true,
   export_include_dirs: ["."],
   host_supported: true,
-  defaults: ["cuttlefish_recovery_available"],
 }
 
 cc_prebuilt_binary {
