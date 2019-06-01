@@ -19,6 +19,13 @@ cc_library_headers {
   host_supported: true,
 }
 
+cc_library_headers {
+  name: "cuttlefish_kernel_headers_product",
+  product_specific: true,
+  export_include_dirs: ["."],
+  host_supported: true,
+}
+
 cc_prebuilt_binary {
     name: "extract-vmlinux",
     srcs: ["scripts/extract-vmlinux"],
