@@ -82,3 +82,4 @@ struct vsoc_cond_wait {
 #define VSOC_COND_WAIT _IOWR(0xF5, 7, struct vsoc_cond_wait)
 #define VSOC_COND_WAKE _IO(0xF5, 8)
 #endif
+
