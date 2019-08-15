@@ -44,6 +44,12 @@ then
 	exit 2
 fi
 
+# The kernel is an Image.gz on aarch64, so just decompress
+if [ `uname -m` = aarch64 ]; then
+   gunzip < "$1"
+   exit $?
+fi
+
 # Prepare temp files:
 tmp=$(mktemp /tmp/vmlinux-XXX)
 trap "rm -f $tmp" 0
