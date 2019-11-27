@@ -36,8 +36,9 @@
           "exclude-filter": "android.os.cts.UsbDebuggingTest#testUsbDebugging"
         }
       ]
+    },
+    {
+      "name": "minikin_tests"
     }
   ]
 }
-                                                                                
-
