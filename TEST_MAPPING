@@ -1,6 +1,9 @@
 {
   "presubmit": [
     {
+      "name": "netd_integration_test"
+    },
+    {
       "name": "CtsBionicTestCases"
     },
     {
