@@ -42,6 +42,9 @@
     },
     {
       "name": "minikin_tests"
+    },
+    {
+      "name": "toybox-tests"
     }
   ]
 }
