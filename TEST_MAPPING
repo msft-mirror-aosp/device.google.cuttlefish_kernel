@@ -1,6 +1,9 @@
 {
   "presubmit": [
     {
+      "name": "netd_integration_test"
+    },
+    {
       "name": "CtsBionicTestCases"
     },
     {
@@ -36,8 +39,15 @@
           "exclude-filter": "android.os.cts.UsbDebuggingTest#testUsbDebugging"
         }
       ]
+    },
+    {
+      "name": "minikin_tests"
+    },
+    {
+      "name": "toybox-tests"
+    },
+    {
+      "name": "CtsPerfettoTestCases"
     }
   ]
 }
-                                                                                
-
