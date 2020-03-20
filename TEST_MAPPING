@@ -1,6 +1,9 @@
 {
   "presubmit": [
     {
+      "name": "netd_integration_test"
+    },
+    {
       "name": "CtsBionicTestCases"
     },
     {
@@ -39,6 +42,12 @@
     },
     {
       "name": "minikin_tests"
+    },
+    {
+      "name": "toybox-tests"
+    },
+    {
+      "name": "CtsPerfettoTestCases"
     }
   ]
 }
