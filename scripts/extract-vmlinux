@@ -18,7 +18,11 @@ check_vmlinux()
 	readelf -h $1 > /dev/null 2>&1
 	if [ $? -ne 0 ]; then
 		# On ARM64, the kernel might be a PE file instead
-		file $1 | grep -q "MS-DOS executable$" || return 1
+		# and output of file command might be something like following:
+		# $ file cuttlefish_assembly/vmlinux
+		# cuttlefish_assembly/vmlinux: MS-DOS executable PE32+ executable (EFI application) Aarch64 (stripped to external PDB), for MS Windows
+		# $
+		file $1 | grep -q "MS-DOS executable" || return 1
 	fi
 
 	cat $1
