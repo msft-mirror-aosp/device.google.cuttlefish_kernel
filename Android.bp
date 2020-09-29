@@ -12,8 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-cc_prebuilt_binary {
+sh_binary_host {
     name: "extract-vmlinux",
-    srcs: ["scripts/extract-vmlinux"],
-    defaults: ["cuttlefish_host_only"],
+    src: "scripts/extract-vmlinux",
 }
